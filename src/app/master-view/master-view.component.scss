@@ -1,0 +1,61 @@
+:host {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: flex-start;
+}
+.column-layout {
+  display: flex;
+  flex-direction: column;
+}
+.group {
+  border-color: var(--ig-error-500);
+  border-width: 1px;
+  border-style: solid;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 16px;
+  overflow: hidden;
+  padding: 8px;
+  min-width: 50px;
+  min-height: 50px;
+  flex-shrink: 0;
+}
+.row-layout {
+  display: flex;
+}
+.group_1 {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 8px;
+  position: relative;
+}
+.group_2 {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  position: relative;
+}
+.text {
+  color: var(--ig-gray-500);
+  height: max-content;
+  min-width: min-content;
+}
+.text_1 {
+  height: max-content;
+  min-width: min-content;
+}
+.radio-group {
+  margin: 0 32px 0 16px;
+  width: max-content;
+  height: max-content;
+}
+.radio-group_1 {
+  margin: 0 0 0 16px;
+  width: max-content;
+  height: max-content;
+}

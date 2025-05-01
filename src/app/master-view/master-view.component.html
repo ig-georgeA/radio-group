@@ -1,0 +1,44 @@
+<div class="column-layout group">
+  <div class="row-layout group_1">
+    <div class="row-layout group_1">
+      <p class="text">
+        Initial value:
+      </p>
+      <p class="text_1">
+        1
+      </p>
+    </div>
+    <div class="row-layout group_1">
+      <p class="text">
+        Current value
+      </p>
+      <p class="text_1">
+        {{ radioGroupVar }}
+      </p>
+    </div>
+  </div>
+  <div class="row-layout group_2">
+    <igx-radio-group alignment="vertical" [value]="radioGroupVar" (change)="radioGroupVar = $event.value" class="radio-group">
+      <igx-radio required="radioGroupVar" [(ngModel)]="value">
+        Label
+      </igx-radio>
+      <igx-radio [(ngModel)]="value1">
+        Label
+      </igx-radio>
+      <igx-radio [(ngModel)]="value2">
+        Label
+      </igx-radio>
+    </igx-radio-group>
+    <igx-radio-group [value]="radioGroupVar!" (change)="radioGroupVar = $event.value" class="radio-group_1">
+      <igx-radio required="radioGroupVar" [(ngModel)]="value3">
+        Label
+      </igx-radio>
+      <igx-radio [(ngModel)]="value4">
+        Label
+      </igx-radio>
+      <igx-radio [(ngModel)]="value5">
+        Label
+      </igx-radio>
+    </igx-radio-group>
+  </div>
+</div>
